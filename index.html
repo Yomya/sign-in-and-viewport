@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <link rel="stylesheet" href="css\mdui.css">
+  <script type="text/javascript" src="js\mdui.js">
+  </script>
+  <title>登录文件共享</title>
+</head>
+<body style="background-image: url(img/show_brg.jpeg);background-repeat: repeat-y;background-size: cover" class="mdui-theme-accent-blue">
+<div class="mdui-container">
+<!--
+  <div class="mdui-color-blue-200">mdui-color-blue-200</div>
+<div class="mdui-color-blue">mdui-color-blue</div>
+<div class="mdui-color-pink-accent">mdui-color-pink-accent</div>
+<div class="mdui-color-pink-a200">mdui-color-pink-a200</div> -->
+  <div class="">
+
+  </div>
+  <!-- 分割線 -->
+  <div class="mdui-divider"></div>
+
+  <!-- 按鈕 -->
+  <!-- <div><a class="mdui-btn" href="#">dianji woba</a></div>
+  <div><a class="mdui-btn mdui-btn-raised mdui-ripple" href="#">dianji woba</a></div><br> -->
+  <div class="mdui-m-t-5  mdui-textfield mdui-textfield-floating-label">
+    <label  style='font-size:20px; font-weight: bold' class="mdui-textfield-label">账号</label>
+    <input class="mdui-textfield-input" type="text" required/>
+    <div class="mdui-textfield-error">用户名不能为空</div>
+  </div>
+  <!-- 紅色按鈕 -->
+
+  <!--輸入框 <div class="mdui-textfield">
+    <input class="mdui-textfield-input" type="text" placeholder="User Name"/>
+  </div> -->
+    <div class="mdui-m-b-5 mdui-textfield mdui-textfield-floating-label">
+      <label style='font-size:20px;font-weight: bold' class="mdui-textfield-label">密码</label>
+      <input id="passwrd" class="mdui-textfield-input" type="password" pattern="^.*(?=.{6,})(?=.*[a-z])(?=.*[A-Z]).*$" required/>
+      <div class="mdui-textfield-error">密码至少 6 位，且包含大小写字母</div>
+
+    </div>
+      <div><button id="dialogSign"  onclick="roundCircle()" style='width:350px;height:54px;font-size:20px;font-weight: bold;' class="mdui-center mdui-btn mdui-btn-raised mdui-color-blue-accent mdui-ripple">登录</button></div>
+  <!-- <i class="mdui-icon material-icons mdui-icon-left" >ac_unit</i> -->
+</div>
+ <div class="mdui-dialog">
+
+ </div>
+<!-- 进度条 -->
+<div class="mdui-center mdui-spinner mdui-spinner-colorful"></div>
+
+<script type="text/javascript">
+function roundCircle() {
+
+  let psd = document.getElementById('passwrd').value;//获取密码
+  // let diag = document.getElementById('dialogSign').mdui-dialog;//获取
+
+  if(psd==='111111')
+  {
+      mdui.mutation();
+    setTimeout('window.location.href="page.html"',1500);}
+  else
+    mdui.alert('用户名或密码不正确！');
+}
+</script>
+<script type="js\main.js"></script>
+</body>
+</html>
